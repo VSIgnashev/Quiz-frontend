@@ -1,0 +1,32 @@
+diff --git a/src/api/axios.js b/src/api/axios.js
+index 05311f5..a020c48 100644
+--- a/src/api/axios.js
++++ b/src/api/axios.js
+@@ -10,5 +10,5 @@ export const axiosPrivate = axios.create({
+   headers: {
+     "Content-Type": "application/json",
+   },
+-  //withCredentials: true,
++  withCredentials: true,
+ });
+diff --git a/src/hooks/useRefreshToken.js b/src/hooks/useRefreshToken.js
+index cd083ad..5a215a4 100644
+--- a/src/hooks/useRefreshToken.js
++++ b/src/hooks/useRefreshToken.js
+@@ -10,16 +10,12 @@ const useRefreshToken = () => {
+       url: "/auth/refreshToken",
+       method: "post",
+       headers: { "Content-Type": "application/json", authtoken: auth.token },
+-      data: {
+-        refreshToken: auth.refreshToken,
+-      },
+     };
+     const response = await axios.request(requestOptions);
+ 
+     setAuth((prev) => {
+       return {
+         token: response.data.token,
+-        refreshToken: response.data.refreshToken,
+       };
+     });
+ 

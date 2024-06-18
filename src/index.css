@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./utilities/fonts.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+Link,
+a {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+html,
+body {
+  height: 100%;
+
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

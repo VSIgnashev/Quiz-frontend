@@ -1,0 +1,17 @@
+.signUpButton {
+  width: 415px;
+  background-color: black;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px;
+}
+
+.signUpButton:disabled {
+  background-color: grey;
+}
