@@ -20,7 +20,7 @@ My pet project with [backend-developer](https://github.com/Fellum).  Currently f
 
 <h2>Features that was in plans</h2>
 
-<li>Redisi</li>
+<li>Redesign</li>
 <li>Mobile version</li>
 <li>New types of quizes</li>
 <li>Search system with thematics tags</li>
